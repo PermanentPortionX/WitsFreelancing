@@ -1,8 +1,19 @@
 apply plugin: 'com.android.application'
+apply plugin: 'jacoco-android'
 
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.0"
+    testOptions {
+        animationsDisabled = true
+        unitTests.returnDefaultValues = true
+        unitTests.all{
+            jacoco {
+                includeNoLocationClasses = true
+            }
+        }
+    }
+
     defaultConfig {
         applicationId "com.wits.project.witsfreelancing"
         minSdkVersion 15
@@ -16,6 +27,13 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            debuggable true
+            testCoverageEnabled true
+        }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
