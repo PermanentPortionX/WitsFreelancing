@@ -7,10 +7,7 @@ import android.support.test.runner.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static android.support.test.InstrumentationRegistry.getTargetContext;
 import static android.support.test.internal.runner.junit4.statement.UiThreadStatement.runOnUiThread;
-import static org.junit.Assert.*;
-
 @RunWith(AndroidJUnit4.class)
 public class ServerCommunicatorTest {
 
@@ -25,7 +22,7 @@ public class ServerCommunicatorTest {
                         protected void onPostExecute(String output) {
 
                         }
-                    }.execute("");
+                    }.execute("www.google.com");
                 }
             });
         } catch (Throwable throwable) {
