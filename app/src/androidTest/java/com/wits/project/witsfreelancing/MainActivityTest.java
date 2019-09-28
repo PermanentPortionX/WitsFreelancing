@@ -17,6 +17,7 @@ import static org.junit.Assert.*;
 public class MainActivityTest {
 
     private Context c = InstrumentationRegistry.getTargetContext();
+
     @Test
     public void startMainActivity(){
         getInstrumentation().runOnMainSync(new Runnable() {
