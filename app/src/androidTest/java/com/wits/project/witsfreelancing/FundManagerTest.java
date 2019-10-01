@@ -5,6 +5,7 @@ import android.support.test.runner.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static android.support.test.InstrumentationRegistry.getInstrumentation;
 import static android.support.test.internal.runner.junit4.statement.UiThreadStatement.runOnUiThread;
 import static org.junit.Assert.*;
 
@@ -18,7 +19,13 @@ public class FundManagerTest {
 
     @Test
     public void postFunds_fundsNotPosted_postFundsPass(){
-        try {
+        getInstrumentation().runOnMainSync(new Runnable() {
+            @Override
+            public void run() {
+                FundManager.postFunds(1627982, 100);
+            }
+        });
+        /*try {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -27,12 +34,18 @@ public class FundManagerTest {
             });
         } catch (Throwable throwable) {
             throwable.printStackTrace();
-        }
+        }*/
     }
 
     @Test
     public void viewUserFunds_fundsNotViewed_viewUserFundsPass(){
-        try {
+        getInstrumentation().runOnMainSync(new Runnable() {
+            @Override
+            public void run() {
+                FundManager.viewFunds(1627982);
+            }
+        });
+        /*try {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -41,6 +54,6 @@ public class FundManagerTest {
             });
         } catch (Throwable throwable) {
             throwable.printStackTrace();
-        }
+        }*/
     }
 }
