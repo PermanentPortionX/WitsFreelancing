@@ -15,6 +15,10 @@ import static org.mockito.ArgumentMatchers.anyString;
 public class JobManagerTest {
 
     @Test
+    public void createInstance(){
+        new JobManager();
+    }
+    @Test
     public void postJob_jobNotPosted_postJobPass() {
         try {
             runOnUiThread(new Runnable() {

@@ -15,7 +15,7 @@ public class FundManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -28,7 +28,7 @@ public class FundManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }

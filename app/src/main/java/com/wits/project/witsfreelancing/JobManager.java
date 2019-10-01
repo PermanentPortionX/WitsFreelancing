@@ -24,7 +24,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -35,7 +35,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -48,7 +48,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -60,7 +60,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -72,7 +72,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -84,7 +84,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }
@@ -96,7 +96,7 @@ public class JobManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
+                System.out.println(output);
             }
         }.execute(LINK);
     }

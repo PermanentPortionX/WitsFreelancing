@@ -12,6 +12,11 @@ import static android.support.test.internal.runner.junit4.statement.UiThreadStat
 public class AccountManagerTest {
 
     @Test
+    public void createInstance(){
+        new AccountManager();
+    }
+
+    @Test
     public void logIn_notLoggedIn_loginFails(){
         getInstrumentation().runOnMainSync(new Runnable() {
             @Override

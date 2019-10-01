@@ -12,6 +12,11 @@ import static org.junit.Assert.*;
 public class FundManagerTest {
 
     @Test
+    public void createInstance(){
+        new FundManager();
+    }
+
+    @Test
     public void postFunds_fundsNotPosted_postFundsPass(){
         try {
             runOnUiThread(new Runnable() {

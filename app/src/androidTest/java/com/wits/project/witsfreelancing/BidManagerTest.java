@@ -12,6 +12,11 @@ import static org.mockito.ArgumentMatchers.anyString;
 public class BidManagerTest {
 
     @Test
+    public void createInstance(){
+        new BidManager();
+    }
+
+    @Test
     public void postBid_bidNotPosted_postBidPass(){
         try {
             runOnUiThread(new Runnable() {
