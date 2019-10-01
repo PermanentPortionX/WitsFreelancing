@@ -34,7 +34,7 @@ public class JobManagerTest {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-
+                    JobManager.viewAllJobs();
                 }
             });
         } catch (Throwable throwable) {
@@ -43,22 +43,72 @@ public class JobManagerTest {
     }
 
     @Test
-    public void assignJob() {
+    public void assignJob_jobNotAssigned_jobAssignPass() {
+        try {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JobManager.assignJob(anyInt(), anyInt());
+                }
+            });
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 
     @Test
-    public void pay() {
+    public void pay_employeeNotPaid_employeePaid() {
+        try {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JobManager.pay(anyInt());
+                }
+            });
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 
     @Test
-    public void jobComplete() {
+    public void jobComplete_jobStatusInComplete_JobStatusComplete() {
+        try {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JobManager.jobComplete(anyInt());
+                }
+            });
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 
     @Test
-    public void viewMyJobs() {
+    public void viewMyJobs_myJobsNotRetrieved_viewMyJobsPass() {
+        try {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JobManager.viewMyJobs(anyInt());
+                }
+            });
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 
     @Test
-    public void viewOfferedJobs() {
+    public void viewOfferedJobs_offeredJobsNotRetrieved_viewOfferedJobsPass() {
+        try {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    JobManager.viewOfferedJobs(anyInt());
+                }
+            });
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 }
