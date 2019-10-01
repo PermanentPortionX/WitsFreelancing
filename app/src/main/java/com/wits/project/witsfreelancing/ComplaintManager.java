@@ -16,7 +16,6 @@ public class ComplaintManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
             }
         }.execute(LINK);
     }

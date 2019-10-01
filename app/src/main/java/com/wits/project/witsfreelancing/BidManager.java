@@ -17,7 +17,6 @@ public class BidManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
             }
         }.execute(LINK);
     }
@@ -28,7 +27,6 @@ public class BidManager {
         new ServerCommunicator(cv) {
             @Override
             protected void onPostExecute(String output) {
-
             }
         }.execute(LINK);
     }

@@ -18,6 +18,7 @@ public class JobManagerTest {
     public void createInstance(){
         new JobManager();
     }
+
     @Test
     public void postJob_jobNotPosted_postJobPass() {
         try {
