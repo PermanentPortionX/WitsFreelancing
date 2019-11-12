@@ -33,7 +33,4 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> activityTestRule = new ActivityTestRule<>(MainActivity.class);
 
-    @Test
-    public void loadHomePage() {
-    }
 }

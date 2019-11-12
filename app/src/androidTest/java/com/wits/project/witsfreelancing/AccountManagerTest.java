@@ -24,17 +24,6 @@ public class AccountManagerTest {
                 AccountManager.logIn("wrong user", "wrong pass");
             }
         });
-        /*
-        try{
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    AccountManager.logIn("wrong user", "wrong pass");
-                }
-            });
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }*/
     }
 
     @Test
